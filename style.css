@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -53,7 +59,7 @@ a {
 }
 
 .main-text {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 900;
     color: #f9faf8;
     margin: 0;
@@ -65,12 +71,14 @@ a {
     margin: 0;
 }
 
-.hero-text button {
+.btn {
     border-radius: 4px;
     background-color: #3882f6;
     color: #f9faf8;
     align-self: flex-start;
-    padding: 4px 16px;
+    padding: .25rem 1.25rem;
+    border: none;
+    font-weight: bold;
 }
 
 .hero-image{
@@ -81,6 +89,7 @@ a {
 .hero-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .information {
@@ -141,11 +150,71 @@ cite {
     align-self: flex-end;
 }
 
+.cta {
+    margin-inline: 10vw;
+    margin-block: 5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.cta-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 5;
+}
+
+.cta-description h3 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.cta-description p {
+    margin: 0;
+}
+
+.cta .btn{
+    border:2px solid #e5e7eb;
+    align-self: center;
+    flex: 1;
+}
+
 @media screen and (max-width: 940px) {
     .hero-content {
         flex-direction: column-reverse;
         height: auto;
     }
-
     
+    .hero-text{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .main-text {
+        font-size: 1.6rem;
+    }
+
+    .main-description {
+        font-size: 1rem;
+    }
+
+    .quote blockquote {
+        font-size: 1.5rem;
+    }    
+
+    .cta {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .cta .btn {
+        align-self: flex-start;
+    }
 }
