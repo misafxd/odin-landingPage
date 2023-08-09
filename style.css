@@ -23,12 +23,16 @@ body {
 
 .logo-text {
     margin-right: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 a {
     text-decoration: none;
     color: #f9faf8;
+}
+
+.logo-text a {
+    font-size: 5rem;
 }
 
 .hero-content {
@@ -91,9 +95,10 @@ a {
 }
 
 .card-container {
-display: flex;
-justify-content: space-between;
-gap: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -101,10 +106,17 @@ gap: 2.5rem;
     flex-direction: column;
     align-items: center;
     font-size: 1.125rem;
+    flex: 1;
+    margin: 0 auto;
 }
 
-.card h2 {
+.card p {
+    text-align: center;
+}
+
+.information h2 {
     font-weight: 900;
+    text-align: center;
 }
 
 @media screen and (max-width: 940px) {
