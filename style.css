@@ -59,13 +59,11 @@ a {
     font-size: 3rem;
     font-weight: 900;
     color: #f9faf8;
-    margin: 0;
 }
 
 .main-description {
     font-size: 1.125rem;
     color: #e5e7eb;
-    margin: 0;
 }
 
 .btn {
@@ -130,7 +128,6 @@ a {
 }
 
 .quote blockquote {
-    margin: 0;
     margin-inline: 12vw;
     padding: 2rem;
     display: flex;
@@ -167,7 +164,6 @@ cite {
 }
 
 .cta-description h3 {
-    margin: 0;
     font-weight: bold;
     font-size: 1.5rem;
 }
