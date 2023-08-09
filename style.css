@@ -12,7 +12,7 @@ body {
     gap: 20px;
 }
 
-.header {
+.nav {
     width: auto;
     display: flex;
     gap: 16px;
