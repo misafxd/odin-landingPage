@@ -2,9 +2,6 @@
 
 * {
     font-family: 'Noto Sans', sans-serif;
-}
-
-body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -175,13 +172,18 @@ cite {
     font-size: 1.5rem;
 }
 
-.cta-description p {
-    margin: 0;
-}
-
 .cta .btn{
     border:2px solid #e5e7eb;
     align-self: center;
+    flex: 1;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
     flex: 1;
 }
 
