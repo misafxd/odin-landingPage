@@ -20,13 +20,19 @@
     display: flex;
     gap: 16px;
     align-items: center;
-    margin-inline: 10vw;
-
+    margin-inline: 15vw;
 }
 
 .logo-text {
     margin-right: auto;
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo-text img {
+    flex: 1;
 }
 
 a {
@@ -36,10 +42,11 @@ a {
 
 .logo-text a {
     font-size: 5rem;
+    flex: 1;
 }
 
 .hero-content {
-    margin-inline: 10vw;
+    margin-inline: 15vw;
     display: flex;
     gap: 32px;
     margin-block: 48px;
@@ -56,7 +63,7 @@ a {
 }
 
 .main-text {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900;
     color: #f9faf8;
 }
@@ -91,7 +98,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-inline: 12vw;
+    margin-inline: 15vw;
     margin-block: 2rem;
     gap: 2rem;
     color: #1f2937;
@@ -112,6 +119,14 @@ a {
     font-size: 1.125rem;
     flex: 1;
     margin: 0 auto;
+    gap: 1rem;
+}
+
+.card img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
 }
 
 .card p {
@@ -128,7 +143,7 @@ a {
 }
 
 .quote blockquote {
-    margin-inline: 12vw;
+    margin-inline: 15vw;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -145,7 +160,7 @@ cite {
 }
 
 .cta {
-    margin-inline: 10vw;
+    margin-inline: 15vw;
     margin-block: 5rem;
     padding: 2rem;
     display: flex;
@@ -184,6 +199,7 @@ footer {
 }
 
 @media screen and (max-width: 940px) {
+    
     .hero-content {
         flex-direction: column-reverse;
         height: auto;
@@ -195,6 +211,11 @@ footer {
 }
 
 @media screen and (max-width: 540px){
+
+    .logo-text{
+        font-size: 1rem;
+        justify-content: space-between;
+    }
     .main-text {
         font-size: 1.6rem;
     }
