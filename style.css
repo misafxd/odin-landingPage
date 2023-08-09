@@ -79,6 +79,34 @@ a {
     height: auto;
 }
 
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 10vw;
+    margin-block: 2rem;
+    gap: 2rem;
+    color: #1f2937;
+    font-size: 1.5rem;
+}
+
+.card-container {
+display: flex;
+justify-content: space-between;
+gap: 2.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.card h2 {
+    font-weight: 900;
+}
+
 @media screen and (max-width: 940px) {
     .hero-content {
         flex-direction: column-reverse;
